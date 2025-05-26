@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "951d5b6d-1cd2-476e-a402-7cb14b3bc545",
+		"name": "BooksApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31986032"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"The Alchemist\",\r\n  \"price\": 299,\r\n  \"author\": \"Paulo Coelho\",\r\n  \"publishDate\": \"2023-12-15\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bookstore-d6db.onrender.com/books",
+					"protocol": "https",
+					"host": [
+						"bookstore-d6db",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"The Alchemist -updated field\",\r\n  \"price\": 299,\r\n  \"author\": \"Paulo Coelho\",\r\n  \"publishDate\": \"2023-12-15\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bookstore-d6db.onrender.com/books/683456bca8f315f6d6b85fd1",
+					"protocol": "https",
+					"host": [
+						"bookstore-d6db",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"books",
+						"683456bca8f315f6d6b85fd1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://bookstore-d6db.onrender.com/books/683456c1a8f315f6d6b85fd3",
+					"protocol": "https",
+					"host": [
+						"bookstore-d6db",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"books",
+						"683456c1a8f315f6d6b85fd3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://bookstore-d6db.onrender.com/books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"The Alchemist\",\r\n  \"price\": 299,\r\n  \"author\": \"Paulo Coelho\",\r\n  \"publishDate\": \"2023-12-15\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bookstore-d6db.onrender.com/books",
+					"protocol": "https",
+					"host": [
+						"bookstore-d6db",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
